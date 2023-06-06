@@ -11,7 +11,7 @@ function addTask(){
         alert("You Must write Something!");
     }
     else{
-        let li = document.createElement("LI");
+        let li = document.createElement("li");
         li.innerHTML = inputBox.value;
         listContainer.appendChild(li);
         let span = document.createElement("span");
@@ -30,7 +30,7 @@ listContainer.addEventListener('click' , function(e){
 
 
     //if li clicked then toggle checked class
-    if(e.target.tagName === "Li"){
+    if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
         saveData();
 
