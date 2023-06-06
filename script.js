@@ -11,7 +11,7 @@ function addTask(){
         alert("You Must write Something!");
     }
     else{
-        let li = document.createElement("li");
+        let li = document.createElement("LI");
         li.innerHTML = inputBox.value;
         listContainer.appendChild(li);
         let span = document.createElement("span");
